@@ -14,6 +14,8 @@
 sed -i 's/192.168.1.1/172.16.1.1/g' package/base-files/files/bin/config_generate
 sed -i 's/0.openwrt.pool.ntp.org/time.pool.aliyun.com/g' package/base-files/files/bin/config_generate
 sed -i 's/1.openwrt.pool.ntp.org/ntp1.aliyun.com/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/OpenWrt-0/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/OpenWrt-xx/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 
 cat>>package/network/config/firewall/files/firewall.config<<EOF
